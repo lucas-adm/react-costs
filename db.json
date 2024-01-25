@@ -1,0 +1,40 @@
+{
+  "projects": [
+    {
+      "name": "Primeiro Projeto",
+      "budget": "300.00",
+      "category": {
+        "id": "3",
+        "name": "Design"
+      },
+      "cost": 150,
+      "services": [
+        {
+          "name": "Primeiro serviço",
+          "cost": "150.00",
+          "description": "Serviço teste",
+          "id": "df24b2f0-6381-497c-b17f-f7fed2e0fbbb"
+        }
+      ],
+      "id": 1
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "name": "Infra"
+    },
+    {
+      "id": 2,
+      "name": "Desenvolvimento"
+    },
+    {
+      "id": 3,
+      "name": "Design"
+    },
+    {
+      "id": 4,
+      "name": "Planejamento"
+    }
+  ]
+}
