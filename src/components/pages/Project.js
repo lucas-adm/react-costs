@@ -11,6 +11,7 @@ import Message from '../layouts/Message'
 import ServiceForm from '../service/ServiceForm'
 import ServiceCard from '../service/ServiceCard'
 
+import config from '../../config'
 
 function Project() {
 
@@ -32,7 +33,7 @@ function Project() {
 
     useEffect(() => {
 
-        fetch(`http://localhost:5000/projects/${id}`, {
+        fetch(`${config.host}/projects/${id}`, {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json'
@@ -57,7 +58,7 @@ function Project() {
             return false
         }
 
-        fetch(`http://localhost:5000/projects/${id}`, {
+        fetch(`${config.host}/projects/${id}`, {
             method: 'PUT',
             headers: {
                 'Content-Type': 'application/json'
@@ -96,7 +97,7 @@ function Project() {
 
         project.cost = newCost
 
-        fetch(`http://localhost:5000/projects/${project.id}`, {
+        fetch(`${config.host}/projects/${project.id}`, {
             method: 'PATCH',
             headers: {
                 'Content-Type': 'application/json'
@@ -125,7 +126,7 @@ function Project() {
         projectUpdated.services = servicesUpdated
         projectUpdated.cost = parseFloat(projectUpdated.cost) - parseFloat(cost)
 
-        fetch(`http://localhost:5000/projects/${projectUpdated.id}`, {
+        fetch(`${config.host}/projects/${projectUpdated.id}`, {
             method: 'PATCH',
             headers: {
                 'Content-Type': 'application/json'

@@ -9,6 +9,8 @@ import LinkButton from '../layouts/LinkButton'
 import ProjectCard from '../project/ProjectCard'
 import Loading from '../layouts/Loading'
 
+import config from '../../config'
+
 function Projects() {
 
     const [projects, setProjects] = useState([])
@@ -16,7 +18,7 @@ function Projects() {
     const [projectMessage, setProjectMessage] = useState('')
 
     useEffect(() => {
-        fetch('http://localhost:5000/projects', {
+        fetch(`${config.host}/projects`, {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json'
@@ -41,7 +43,7 @@ function Projects() {
 
     function removeProject(id) {
 
-        fetch(`http://localhost:5000/projects/${id}`, {
+        fetch(`${config.host}/projects/${id}`, {
             method: 'DELETE',
             headers: {
                 'Content-Type': 'application/json'

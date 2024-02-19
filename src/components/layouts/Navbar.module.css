@@ -23,3 +23,9 @@
 .item a:hover {
     color: #ffbb33;
 }
+
+@media screen and (max-width: 410px) {
+    .navbar img {
+        display: none;
+    }
+}

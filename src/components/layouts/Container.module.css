@@ -1,5 +1,6 @@
 .container {
-    width: 1200px;
+    max-width: 1200px;
+    width: 100vw;
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
@@ -17,4 +18,15 @@
 .column {
     flex-direction: column;
     justify-content: flex-start;
+}
+
+@media screen and (max-width: 960px) {
+    
+    .container{
+        width: auto;
+    }
+
+    .start {
+        flex-direction: column;
+    }
 }

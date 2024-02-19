@@ -4,6 +4,7 @@ import ProjectForm from '../project/ProjectForm'
 
 import styles from './NewProject.module.css'
 
+import config from '../../config'
 
 function NewProject() {
 
@@ -14,7 +15,7 @@ function NewProject() {
         project.cost = 0
         project.services = []
 
-        fetch('http://localhost:5000/projects', {
+        fetch(`${config.host}/projects`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'

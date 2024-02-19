@@ -5,13 +5,15 @@ import Select from '../form/Select'
 import SubmitButton from '../form/SubmitButton'
 import styles from './ProjectForm.module.css'
 
+import config from '../../config'
+
 function ProjectForm({ handleSubmit, btnText, projectData }) {
 
     const [categories, setCategories] = useState([])
     const [project, setProject] = useState(projectData || {})
 
     useEffect(() => {
-        fetch('http://localhost:5000/categories', {
+        fetch(`${config.host}/categories`, {
             method: "GET",
             headers: {
                 'Content-Type': 'application/json'
