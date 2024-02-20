@@ -1,38 +1,20 @@
 {
   "projects": [
     {
-      "name": "Primeiro Projeto",
-      "budget": "300.00",
-      "category": {
-        "id": "3",
-        "name": "Design"
-      },
-      "cost": 150,
-      "services": [
-        {
-          "name": "Primeiro serviço",
-          "cost": "150.00",
-          "description": "Serviço teste",
-          "id": "df24b2f0-6381-497c-b17f-f7fed2e0fbbb"
-        }
-      ],
-      "id": "1"
-    },
-    {
-      "id": "2d6f",
-      "name": "AAAA",
-      "budget": "888884",
+      "id": "efe3",
+      "name": "Reformar São Januário",
       "category": {
         "id": "4",
         "name": "Planejamento"
       },
-      "cost": 33333,
+      "budget": "506000000.00",
+      "cost": 1,
       "services": [
         {
-          "name": "aaaa",
-          "cost": "33333",
-          "description": "aaaa",
-          "id": "4fb4236b-a1a5-4872-bebc-7ed1dd936b24"
+          "cost": "1.00",
+          "description": "Destruir a estátua do Romário",
+          "name": "Limpeza",
+          "id": "db625f8c-655b-4da7-a0e4-141fc6d94b74"
         }
       ]
     }
